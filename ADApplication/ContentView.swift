@@ -12,13 +12,42 @@ struct ContentView: View {
     @State var showMenu = false
     
     var body: some View {
+        
+        let drag = DragGesture()
+                    .onEnded {
+                        if $0.translation.width < -100 {
+                            withAnimation {
+                                self.showMenu = false
+                            }
+                        }
+                    }
+                
+                return NavigationView {
+                    GeometryReader { geometry in
+                        ZStack(alignment: .leading) {
+                            if self.showMenu {
+                                MenuView()
+                                    .frame(width: geometry.size.width/2)
+                                    .transition(.move(edge: .leading))
+                            }
+                        }
+                            .gesture(drag)
+                    }
+                        .navigationBarTitle("ADApplication", displayMode: .inline)
+                        .navigationBarItems(leading: (
+                            Button(action: {
+                                withAnimation {
+                                    self.showMenu.toggle()
+                                }
+                            }) {
+                                Image(systemName: "line.horizontal.3")
+                                    .imageScale(.large)
+                            }
+                        ))
+                }
+        /*
         NavigationView {
             VStack {
-
-                Text("ADApplication")
-                NavigationLink(destination: HomeView()) {
-                    Text("Continue")
-                }
                 
                 ZStack(alignment: .leading) {
                     GeometryReader { geometry in
@@ -28,13 +57,20 @@ struct ContentView: View {
                         if self.showMenu {
                             MenuView()
                                 .frame(width: geometry.size.width/2, height: geometry.size.height)
+                                .transition(.move(edge: .leading))
                         }
                     }
                    
                 }
+                
+                Text("ADApplication")
+                NavigationLink(destination: HomeView()) {
+                    Text("Continue")
+                }
+                Spacer()
             }
         }
-        .padding()
+        .padding()*/
     }
 }
 
@@ -55,83 +91,45 @@ struct MenuView: View {
         VStack(alignment: .leading){
             HStack {
                 Image(systemName: "homekit")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
                 Text("Home")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
             .padding(.top, 100)
             HStack {
                 Image(systemName: "newspaper")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
                 Text("Visual Guidelines")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
             .padding(.top, 30)
             HStack {
                 Image(systemName: "mail.stack")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
                 Text("Feedback")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
             .padding(.top, 30)
             HStack {
                 Image(systemName: "person")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
                 Text("About Us")
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
             .padding(.top, 30)
+            Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 32/255, green: 32/255, blue: 32/255))
+        .background(Color(red: 32/255, green: 81/255, blue: 109/255))
         .edgesIgnoringSafeArea(.all)
-    }
-}
-/*
-extension View {
-    /// Navigate to a new view.
-    /// - Parameters:
-    ///   - view: View to navigate to.
-    ///   - binding: Only navigates when this condition is `true`.
-    func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
-        NavigationView {
-            ZStack {
-                self
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
-
-                NavigationLink(
-                    destination: view
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-                ) {
-                    EmptyView()
-                }
-            }
-        }
-        .navigationViewStyle(.stack)
-    }
-}
-*/
-
-struct ExtractedView: View {
-    
-    @Binding var showMenu: Bool
-    
-    var body: some View {
-        Button(action : {
-            self.showMenu.toggle()
-        }) {
-            Text("Show menu")
-        }
     }
 }
