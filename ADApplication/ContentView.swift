@@ -45,32 +45,6 @@ struct ContentView: View {
                             }
                         ))
                 }
-        /*
-        NavigationView {
-            VStack {
-                
-                ZStack(alignment: .leading) {
-                    GeometryReader { geometry in
-                        ExtractedView(showMenu: self.$showMenu)
-                            .frame(width: geometry.size.width, height: geometry.size.height)
-                        
-                        if self.showMenu {
-                            MenuView()
-                                .frame(width: geometry.size.width/2, height: geometry.size.height)
-                                .transition(.move(edge: .leading))
-                        }
-                    }
-                   
-                }
-                
-                Text("ADApplication")
-                NavigationLink(destination: HomeView()) {
-                    Text("Continue")
-                }
-                Spacer()
-            }
-        }
-        .padding()*/
     }
 }
 
@@ -80,11 +54,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct HomeView: View {
-    var body: some View{
-        Text("Home Page")
-    }
-}
 
 struct MenuView: View {
     var body: some View {
@@ -93,7 +62,10 @@ struct MenuView: View {
                 Image(systemName: "homekit")
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
-                Text("Home")
+                
+                NavigationLink(destination: HomeView()) {
+                    Text("Home")
+                }
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
@@ -102,7 +74,9 @@ struct MenuView: View {
                 Image(systemName: "newspaper")
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
-                Text("Visual Guidelines")
+                NavigationLink(destination: GuidelinesView()) {
+                    Text("Visual Guidelines")
+                }
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
@@ -111,7 +85,9 @@ struct MenuView: View {
                 Image(systemName: "mail.stack")
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
-                Text("Feedback")
+                NavigationLink(destination: FeedbackView()) {
+                    Text("Feedback")
+                }
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
@@ -120,7 +96,9 @@ struct MenuView: View {
                 Image(systemName: "person")
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
-                Text("About Us")
+                NavigationLink(destination: AboutUsView()) {
+                    Text("About Us")
+                }
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)
             }
