@@ -24,14 +24,26 @@ struct ContentView: View {
                 
                 return NavigationView {
                     GeometryReader { geometry in
-                        ZStack(alignment: .leading) {
-                            if self.showMenu {
-                                MenuView()
-                                    .frame(width: geometry.size.width/2)
-                                    .transition(.move(edge: .leading))
+                        
+                        VStack {
+                       /*     Text("ADApplication")
+                                .font(.largeTitle)
+                                .foregroundColor(Color(red: 11/255, green: 57/255, blue: 84/255))
+                                .padding()
+                            Text("Welcome to ADApplication: The menu accessible in the top left corner contains more information about our guidelines, our motivations, and the purpose behind this application.")
+                                .foregroundColor(Color(red: 11/255, green: 57/255, blue: 84/255))
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                                .padding()*/
+                          
+                            ZStack(alignment: .leading) {
+                                if self.showMenu {
+                                    MenuView()
+                                        .frame(width: geometry.size.width/2)
+                                        .transition(.move(edge: .leading))
+                                }
                             }
-                        }
                             .gesture(drag)
+                        }
                     }
                         .navigationBarTitle("ADApplication", displayMode: .inline)
                         .navigationBarItems(leading: (
