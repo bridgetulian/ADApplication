@@ -19,7 +19,7 @@ struct AboutUsView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .scaledToFit()
-                Image("bridget_image")
+                Image("abby_image")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .scaledToFit()
