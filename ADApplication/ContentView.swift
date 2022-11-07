@@ -22,19 +22,16 @@ struct ContentView: View {
                         }
                     }
                 
-                return NavigationView {
+        //return NavigationView {
+            NavigationView {
                     GeometryReader { geometry in
                         
                         VStack {
-                       /*     Text("ADApplication")
-                                .font(.largeTitle)
-                                .foregroundColor(Color(red: 11/255, green: 57/255, blue: 84/255))
-                                .padding()
-                            Text("Welcome to ADApplication: The menu accessible in the top left corner contains more information about our guidelines, our motivations, and the purpose behind this application.")
-                                .foregroundColor(Color(red: 11/255, green: 57/255, blue: 84/255))
-                                .frame(maxWidth: .infinity, alignment: .trailing)
-                                .padding()*/
-                          
+                            if self.showMenu == false {
+                                Text("Welcome to ADApplication")
+                                    .frame(width:geometry.size.width)
+                            }
+                            
                             ZStack(alignment: .leading) {
                                 if self.showMenu {
                                     MenuView()
@@ -56,7 +53,7 @@ struct ContentView: View {
                                     .imageScale(.large)
                             }
                         ))
-                }
+            }
     }
 }
 
@@ -67,59 +64,3 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-struct MenuView: View {
-    var body: some View {
-        VStack(alignment: .leading){
-            HStack {
-                Image(systemName: "homekit")
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .imageScale(.large)
-                
-                NavigationLink(destination: HomeView()) {
-                    Text("Home")
-                }
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .font(.headline)
-            }
-            .padding(.top, 100)
-            HStack {
-                Image(systemName: "newspaper")
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .imageScale(.large)
-                NavigationLink(destination: GuidelinesView()) {
-                    Text("Visual Guidelines")
-                }
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .font(.headline)
-            }
-            .padding(.top, 30)
-            HStack {
-                Image(systemName: "mail.stack")
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .imageScale(.large)
-                NavigationLink(destination: FeedbackView()) {
-                    Text("Feedback")
-                }
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .font(.headline)
-            }
-            .padding(.top, 30)
-            HStack {
-                Image(systemName: "person")
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .imageScale(.large)
-                NavigationLink(destination: AboutUsView()) {
-                    Text("About Us")
-                }
-                    .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
-                    .font(.headline)
-            }
-            .padding(.top, 30)
-            Spacer()
-        }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 32/255, green: 81/255, blue: 109/255))
-        .edgesIgnoringSafeArea(.all)
-    }
-}

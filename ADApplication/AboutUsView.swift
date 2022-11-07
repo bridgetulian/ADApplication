@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 
 struct AboutUsView: View {
+    
+    @State var showMenu = false
+
     var body: some View{
         VStack {
             Text("About Us")

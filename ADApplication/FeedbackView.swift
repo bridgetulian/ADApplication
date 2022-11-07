@@ -10,6 +10,8 @@ import SwiftUI
 
 struct FeedbackView: View {
         
+    @State var showMenu = false
+
     var body: some View{
         Text("Feedback")
             .font(.title)
