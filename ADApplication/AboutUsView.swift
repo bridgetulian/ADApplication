@@ -50,8 +50,11 @@ struct AboutUsView: View {
                                     .frame(alignment: .trailing)
                             }
                             .padding()
-                            Text("Bridget and Abby are two undergraduate students at Middlebury College, where they study computer science. For their senior seminar project, they decided to explore accessibility in iOS applications through research, implementation, and presentation. They are both from Massachusetts and going on to work in tech after college, hopefully bringing what they have learned from this project with them")
-                                .padding()
+                            ScrollView {
+                                Text("Bridget and Abby are two undergraduate students at Middlebury College, where they study computer science. For their senior seminar project, they decided to explore accessibility in iOS applications through research, implementation, and presentation. They are both from Massachusetts and going on to work in tech after college, hopefully bringing what they have learned from this project with them")
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                            }
                             Text("Contact information:")
                                 .padding()
                             Text("Bridget: bulian@middlebury.edu")

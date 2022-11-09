@@ -28,13 +28,14 @@ struct HomeView: View {
                     
                     VStack {
                         if self.showMenu == false {
-                            ZStack (alignment: .top){
-                                 VStack (alignment: .center){
+                            ZStack (alignment: .center){
+                                 VStack {
                                      Text("Universal usability is imperative in creating functional, well-developed applications.")
                                          .multilineTextAlignment(.center)
                                          .padding(.top)
                                      Text("Explore the guidelines, source code, and application to learn more about universal usability as a developer or user.")
                                          .multilineTextAlignment(.center)
+                                         .padding(.trailing)
                                      Text("Useful Links")
                                          .font(.headline)
                                          .frame(alignment: .center)
