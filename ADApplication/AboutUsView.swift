@@ -11,38 +11,79 @@ import SwiftUI
 struct AboutUsView: View {
     
     @State var showMenu = false
-
+    
     var body: some View{
-        VStack {
-            Text("About Us")
-                .font(.headline)
-                .padding()
-            HStack{
-                Image("bridget_image")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .scaledToFit()
-                Image("abby_image")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .scaledToFit()
+        
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
             }
-            HStack {
-                Text("Bridget Ulian")
-                    .padding(.trailing)
-                    .frame(alignment: .leading)
-                Text("Abby Wright")
-                    .padding(.leading)
-                    .frame(alignment: .trailing)
+        NavigationView {
+            GeometryReader { geometry in
+                
+                VStack {
+                    if self.showMenu == false {
+                        VStack {
+                            Text("About Us")
+                                .font(.headline)
+                                .padding()
+                            HStack{
+                                Image("bridget_image")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                Image("abby_image")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                            }
+                            HStack {
+                                Text("Bridget Ulian")
+                                    .padding(.trailing)
+                                    .frame(alignment: .leading)
+                                Text("Abby Wright")
+                                    .padding(.leading)
+                                    .frame(alignment: .trailing)
+                            }
+                            .padding()
+                            Text("Bridget and Abby are two undergraduate students at Middlebury College, where they study computer science. For their senior seminar project, they decided to explore accessibility in iOS applications through research, implementation, and presentation. They are both from Massachusetts and going on to work in tech after college, hopefully bringing what they have learned from this project with them")
+                                .padding()
+                            Text("Contact information:")
+                                .padding()
+                            Text("Bridget: bulian@middlebury.edu")
+                            Text("Abby: afwright@middlebury.edu")
+                        }
+                        Spacer()
+                    }
+                }
+                
+                ZStack(alignment: .leading) {
+                    if self.showMenu {
+                        MenuView()
+                            .frame(width: geometry.size.width/2)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .gesture(drag)
             }
-            .padding()
-            Text("Bridget and Abby are two undergraduate students at Middlebury College, where they study computer science. For their senior seminar project, they decided to explore accessibility in iOS applications through research, implementation, and presentation. They are both from Massachusetts and going on to work in tech after college, hopefully bringing what they have learned from this project with them")
-                .padding()
-            Text("Contact information:")
-                .padding()
-            Text("Bridget: bulian@middlebury.edu")
-            Text("Abby: afwright@middlebury.edu")
+            .navigationBarTitle("ADApplication", displayMode: .inline)
+            .navigationBarItems(leading: (
+                Button(action: {
+                    withAnimation {
+                        self.showMenu.toggle()
+                    }
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                        .imageScale(.large)
+                }
+            ))
         }
-        Spacer()
+        .navigationBarBackButtonHidden(true)
+
     }
+
 }
