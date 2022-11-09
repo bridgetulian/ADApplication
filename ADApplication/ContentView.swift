@@ -12,6 +12,8 @@ struct ContentView: View {
     @State var showMenu = false
     
     var body: some View {
+        HomeView()
+        /*
         
         let drag = DragGesture()
                     .onEnded {
@@ -53,7 +55,7 @@ struct ContentView: View {
                                     .imageScale(.large)
                             }
                         ))
-            }
+            }*/
     }
 }
 
