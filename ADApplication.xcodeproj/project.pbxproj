@@ -20,6 +20,7 @@
 		02BE6FE828FEE2AB00559DE1 /* ADApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FE728FEE2AB00559DE1 /* ADApplicationTests.swift */; };
 		02BE6FF228FEE2AB00559DE1 /* ADApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */; };
 		02BE6FF428FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */; };
+		EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875A3E291C7229001FBD3B /* Perceivable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		02BE6FED28FEE2AB00559DE1 /* ADApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITests.swift; sourceTree = "<group>"; };
 		02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA875A3E291C7229001FBD3B /* Perceivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceivable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				0211672A290AFD3E0051B2D7 /* AboutUsView.swift */,
 				0211672C290AFD4E0051B2D7 /* FeedbackView.swift */,
 				0211672E290AFD560051B2D7 /* GuidelinesView.swift */,
+				EA875A40291C7337001FBD3B /* Perceivable */,
 				0255D72F2919A03900C41D59 /* Guideline1View.swift */,
 				02BE6FDA28FEE2AA00559DE1 /* Assets.xcassets */,
 				02BE6FDC28FEE2AA00559DE1 /* Preview Content */,
@@ -143,6 +146,14 @@
 				02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */,
 			);
 			path = ADApplicationUITests;
+			sourceTree = "<group>";
+		};
+		EA875A40291C7337001FBD3B /* Perceivable */ = {
+			isa = PBXGroup;
+			children = (
+				EA875A3E291C7229001FBD3B /* Perceivable.swift */,
+			);
+			path = Perceivable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				0255D7302919A03900C41D59 /* Guideline1View.swift in Sources */,
 				02116729290AFD0F0051B2D7 /* HomeView.swift in Sources */,
 				0211672D290AFD4E0051B2D7 /* FeedbackView.swift in Sources */,
+				EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */,
 				02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */,
 				0211672F290AFD560051B2D7 /* GuidelinesView.swift in Sources */,
 				0211672B290AFD3E0051B2D7 /* AboutUsView.swift in Sources */,
