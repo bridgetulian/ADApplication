@@ -31,7 +31,8 @@ struct GuidelinesView: View {
                         VStack {
                             Text("Guidelines")
                                 .font(.headline)
-                            Text("WCAG Principles")
+                            Text("Click on any of the WCAG Principles to access more specific guidelines pertaining to each item.")
+                                .multilineTextAlignment(.center)
                                 .padding()
                             //NavigationView {
                                     List {
@@ -62,9 +63,7 @@ struct GuidelinesView: View {
                                     }
 
                            // }
-                            Text("Click on any of the WCAG Principles to access more specific guidelines pertaining to each item.")
-                                .multilineTextAlignment(.center)
-                                .padding()
+
                         }
                     }
                 }

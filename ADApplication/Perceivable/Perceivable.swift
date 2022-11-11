@@ -27,6 +27,10 @@ struct Perceivable: View {
 
 //guidelines we can put here
 /*
- 
+ 1. minimize amount of information put on each page compared to desktop/laptop versions
+ 2. reasonable default size for content and touch controls to minimize the need to zoom in and out
+ 3. position form fields below, not beside, their labels
+ 4. allow text to be resizable without assistive technology up to 200%
+ 5. 
  
  */

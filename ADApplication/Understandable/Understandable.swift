@@ -22,5 +22,7 @@ struct Understandable: View {
 
 //guidelines we can put here
 /*
+ 1. Colors make content clear for all people. Use contrasting colors and have information in another way than color.
+ 2.
  
  */

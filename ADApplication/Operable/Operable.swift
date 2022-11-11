@@ -22,5 +22,8 @@ struct Operable: View {
 
 //guidelines we can put here
 /*
- 
+ 1. Allows for alternative control input, like a keyboard.
+ 2. Does not set severe time limits for actions.
+ 3. Ease of input and screen is readable at a glance.
+ 4. 
  */

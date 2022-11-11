@@ -14,3 +14,4 @@ struct Guideline1View: View {
             .navigationBarBackButtonHidden(true)
     }
 }
+
