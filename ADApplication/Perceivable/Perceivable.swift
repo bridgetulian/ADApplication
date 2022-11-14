@@ -18,11 +18,19 @@ struct Perceivable: View {
                 .padding(.bottom)
             VStack {
                 Text("All informative and functional non-text content such as images, icons, charts, image maps etc must have alternative text that describes the meaning or purpose")
+                
+                List {
+                    NavigationLink(destination: ColorContrast()){
+                        Text("Contrast")
+                    }
+                }
+                Spacer()
+                
             }
-            Spacer()
-        }
         }
     }
+}
+    
 
 
 //guidelines we can put here

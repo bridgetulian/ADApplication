@@ -24,6 +24,7 @@
 		02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCB291D7E9400024E54 /* Understandable.swift */; };
 		02CDBDCE291D7E9D00024E54 /* Robust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCD291D7E9D00024E54 /* Robust.swift */; };
 		EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875A3E291C7229001FBD3B /* Perceivable.swift */; };
+		EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		02CDBDCB291D7E9400024E54 /* Understandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Understandable.swift; sourceTree = "<group>"; };
 		02CDBDCD291D7E9D00024E54 /* Robust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robust.swift; sourceTree = "<group>"; };
 		EA875A3E291C7229001FBD3B /* Perceivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceivable.swift; sourceTree = "<group>"; };
+		EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorContrast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +123,8 @@
 				02116728290AFD0F0051B2D7 /* HomeView.swift */,
 				0211672A290AFD3E0051B2D7 /* AboutUsView.swift */,
 				0211672C290AFD4E0051B2D7 /* FeedbackView.swift */,
-				02CDBDC6291D7E4400024E54 /* Operable */,
 				0211672E290AFD560051B2D7 /* GuidelinesView.swift */,
+				02CDBDC6291D7E4400024E54 /* Operable */,
 				02CDBDC4291D7E3500024E54 /* Robust */,
 				EA875A40291C7337001FBD3B /* Perceivable */,
 				0255D72F2919A03900C41D59 /* Guideline1View.swift */,
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				EA875A3E291C7229001FBD3B /* Perceivable.swift */,
+				EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */,
 			);
 			path = Perceivable;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				0255D72E29199FF300C41D59 /* MenuView.swift in Sources */,
 				0255D7302919A03900C41D59 /* Guideline1View.swift in Sources */,
 				02116729290AFD0F0051B2D7 /* HomeView.swift in Sources */,
+				EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */,
 				0211672D290AFD4E0051B2D7 /* FeedbackView.swift in Sources */,
 				EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */,
 				02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */,
