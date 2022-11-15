@@ -30,12 +30,16 @@ struct HomeView: View {
                         if self.showMenu == false {
                             ZStack (alignment: .center){
                                  VStack {
+                                     Text("Welcome to ADApplication!")
+                                         .font(.title)
+                                         .frame(alignment: .center)
+                                         .padding(.top)
                                      Text("Universal usability is imperative in creating functional, well-developed applications.")
                                          .multilineTextAlignment(.center)
-                                         .padding(.top)
-                                     Text("Explore the guidelines, source code, and application to learn more about universal usability as a developer or user.")
+                                         .padding()
+                                     Text("Explore the guidelines, source code, and application through the menu on the left to learn more about universal usability as a developer or user.")
                                          .multilineTextAlignment(.center)
-                                         .padding(.trailing)
+                                         .padding()
                                          Text("Useful Links")
                                              .font(.headline)
                                              .frame(alignment: .center)

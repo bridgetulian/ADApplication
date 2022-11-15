@@ -18,6 +18,9 @@ struct Operable: View {
                 NavigationLink(destination: TargetSize()){
                     Text("Touch Target Size")
                 }
+                NavigationLink(destination: TouchscreenGestures(showInfo: false)){
+                    Text("Touchscreen Gestures")
+                }
             }
             Spacer()
 
