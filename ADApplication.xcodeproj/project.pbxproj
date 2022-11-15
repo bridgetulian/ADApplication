@@ -25,6 +25,7 @@
 		02CDBDCE291D7E9D00024E54 /* Robust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCD291D7E9D00024E54 /* Robust.swift */; };
 		EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875A3E291C7229001FBD3B /* Perceivable.swift */; };
 		EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */; };
+		EAF3923229229822005372C6 /* TextMagnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3923129229822005372C6 /* TextMagnification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		02CDBDCD291D7E9D00024E54 /* Robust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robust.swift; sourceTree = "<group>"; };
 		EA875A3E291C7229001FBD3B /* Perceivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceivable.swift; sourceTree = "<group>"; };
 		EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorContrast.swift; sourceTree = "<group>"; };
+		EAF3923129229822005372C6 /* TextMagnification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMagnification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			children = (
 				EA875A3E291C7229001FBD3B /* Perceivable.swift */,
 				EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */,
+				EAF3923129229822005372C6 /* TextMagnification.swift */,
 			);
 			path = Perceivable;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */,
 				0211672D290AFD4E0051B2D7 /* FeedbackView.swift in Sources */,
 				EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */,
+				EAF3923229229822005372C6 /* TextMagnification.swift in Sources */,
 				02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */,
 				02CDBDCE291D7E9D00024E54 /* Robust.swift in Sources */,
 				02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */,

@@ -36,19 +36,20 @@ struct HomeView: View {
                                      Text("Explore the guidelines, source code, and application to learn more about universal usability as a developer or user.")
                                          .multilineTextAlignment(.center)
                                          .padding(.trailing)
-                                     Text("Useful Links")
-                                         .font(.headline)
-                                         .frame(alignment: .center)
-                                         .padding(.top)
-                                     Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
-                                     Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
-                                         .foregroundColor(.blue)
-                                     Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
-                                         .foregroundColor(.blue)
-                                         .padding(.bottom)
+                                         Text("Useful Links")
+                                             .font(.headline)
+                                             .frame(alignment: .center)
+                                             .padding(.top)
+                                         Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
+                                         Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
+                                             .padding(.horizontal)
+                                             .foregroundColor(.blue)
+                                         Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
+                                             .foregroundColor(.blue)
+                                             .padding(.bottom)
                                      Spacer()
+
                                  }
-                                 Spacer()
                              }
                         }
                         
