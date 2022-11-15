@@ -14,7 +14,13 @@ struct Operable: View {
             Text("Operable")
                 .font(.title)
             Text("all features are fully employable by everyone")
+            List {
+                NavigationLink(destination: TargetSize()){
+                    Text("Touch Target Size")
+                }
+            }
             Spacer()
+
         }
     }
 }
