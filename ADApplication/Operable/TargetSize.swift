@@ -13,9 +13,9 @@ struct TargetSize: View {
     func SampleButton(sizex: CGFloat, source: String) -> some View {
         return HStack {
             Text(source)
-            RoundedRectangle(cornerRadius: 10).frame(width: sizex, height: sizex).foregroundColor(Color("Menu Color"))
             Spacer()
-        }
+            RoundedRectangle(cornerRadius: 10).frame(width: sizex, height: sizex).foregroundColor(Color("Menu Color"))
+         }
     }
     
     
