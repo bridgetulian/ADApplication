@@ -13,7 +13,7 @@ struct Understandable: View {
         VStack {
             Text("Understandable")
                 .font(.title)
-            Text("user can comprehend meaning of presented information")
+            Text("User can comprehend meaning of presented information")
             Spacer()
         }
     }

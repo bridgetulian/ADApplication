@@ -13,7 +13,7 @@ struct Robust: View {
         VStack {
             Text("Robust")
                 .font(.title)
-            Text("flexible content in relation to interpretation by many user agent")
+            Text("Flexible content in relation to interpretation by many user agent").padding([.leading, .bottom, .trailing])
             Spacer()
         }
     }
