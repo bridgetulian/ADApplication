@@ -32,7 +32,7 @@ struct DataEntry: View {
                     .padding(.leading)
                     .frame(width: 30.0, height: 30.0)
                 
-                Text("Swift UI provides constants to specify the keyboard input type, such as URl pad, decimal pad, and web search pad.")
+                Text("Swift UI provides constants to specify the keyboard input type, such as URL pad, decimal pad, and web search pad.")
                     .padding()
             }
             }
