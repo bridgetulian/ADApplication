@@ -14,6 +14,11 @@ struct Understandable: View {
             Text("Understandable")
                 .font(.title)
             Text("User can comprehend meaning of presented information")
+            List {
+                NavigationLink(destination: ClearElements()){
+                    Text("Provide Distinguishing Features for Actionable Elements")
+                }
+            }
             Spacer()
         }
     }

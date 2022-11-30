@@ -14,6 +14,11 @@ struct Robust: View {
             Text("Robust")
                 .font(.title)
             Text("Flexible content in relation to interpretation by many user agent").padding([.leading, .bottom, .trailing])
+            List {
+                NavigationLink(destination: DataEntry()){
+                    Text("Provide Appropriate Data Entry Keyboard")
+                }
+            }
             Spacer()
         }
     }
