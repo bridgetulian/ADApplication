@@ -61,8 +61,14 @@ struct FeedbackView: View {
                         self.showMenu.toggle()
                     }
                 }) {
-                    Image(systemName: "line.horizontal.3")
-                        .imageScale(.large)
+                    if self.showMenu {
+                        Text("Menu")
+                            .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
+                    }
+                    if self.showMenu == false {
+                        Text("Menu")
+                            .foregroundColor(.black)
+                    }
                 }
             ))
         }
