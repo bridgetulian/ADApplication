@@ -47,14 +47,19 @@ struct TouchscreenGestures: View {
                     }
                 }.padding([.top, .leading, .trailing])
                 
-                Text("Click this button to view more information about Touchscreen gestures and why they are important.")
+                Text("Click the button located below to view more information about Touchscreen gestures and why they are important.")
+                    .padding()
                 Button("Information") {
                     showInfo.toggle()
                 }
                 .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 5))
                 if showInfo {
                     VStack {
                         Text("User input forms should always have a way for a user to seek assistance on what questions are asking for and how to fill them out.")
+                            .padding()
                     }
                 }
                 

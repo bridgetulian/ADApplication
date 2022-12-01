@@ -25,6 +25,9 @@ struct Perceivable: View {
                     NavigationLink(destination: TextMagnification()){
                         Text("Text Magnification")
                     }
+                    NavigationLink(destination: SmallScreen()){
+                        Text("Small Screen Size")
+                    }
                 }
                 Spacer()
                 
