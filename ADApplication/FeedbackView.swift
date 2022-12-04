@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import MessageUI
 
 struct FeedbackView: View {
         
@@ -76,3 +77,8 @@ struct FeedbackView: View {
     }
 }
 
+//func composeEmail(subject: Text, body: Text, recipient: Text) {
+//    guard MFMailComposeViewController.canSendMail() else {
+//        let
+//    }
+//}
