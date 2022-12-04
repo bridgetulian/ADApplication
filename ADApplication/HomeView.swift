@@ -40,10 +40,8 @@ struct HomeView: View {
                                      Text("Explore the guidelines, source code, and application through the menu on the left to learn more about universal usability as a developer or user.")
                                          .multilineTextAlignment(.center)
                                          .padding()
-                                         Text("Useful Links")
-                                             .font(.headline)
-                                             .frame(alignment: .center)
-                                             .padding(.top)
+                                     Spacer()
+                                     GroupBox(label: Text("Useful Links")) {
                                          Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
                                          Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
                                              .padding(.horizontal)
@@ -51,7 +49,19 @@ struct HomeView: View {
                                          Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
                                              .foregroundColor(.blue)
                                              .padding(.bottom)
-                                     Spacer()
+                                     }.padding(.all)
+//                                         Text("Useful Links")
+//                                             .font(.headline)
+//                                             .frame(alignment: .center)
+//                                             .padding(.top)
+//                                         Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
+//                                         Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
+//                                             .padding(.horizontal)
+//                                             .foregroundColor(.blue)
+//                                         Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
+//                                             .foregroundColor(.blue)
+//                                             .padding(.bottom)
+//                                     Spacer()
 
                                  }
                              }

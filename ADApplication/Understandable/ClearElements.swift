@@ -53,7 +53,7 @@ struct ClearElements: View {
                         .foregroundColor(Color("Menu Color"))
                         .padding(.leading)
                         .frame(width: 30.0, height: 30.0)
-                    Text("Most app users associate certain icons with different actions. For example, the left pointing arrow is associated with going back a page. When possible, use the commonly associated icons/shapes within your app.").padding(.all)
+                    Text("Most app users associate certain icons with different actions. For example, the left pointing arrow is associated with going back a page. When possible, use the commonly associated icons/shapes within your app.").padding(.all).accessibilityLabel("Pencil Image")
                 }
                 Spacer()
             }
@@ -61,8 +61,3 @@ struct ClearElements: View {
     }
 }
 
-struct ClearElements_Previews: PreviewProvider {
-    static var previews: some View {
-        ClearElements()
-    }
-}
