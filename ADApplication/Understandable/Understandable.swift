@@ -18,6 +18,9 @@ struct Understandable: View {
                 NavigationLink(destination: ClearElements()){
                     Text("Provide Distinguishing Features for Actionable Elements")
                 }
+                NavigationLink(destination: Gesture(added: false)){
+                    Text("Provide Instructions for Custom Gestures")
+                }
             }
             Spacer()
         }

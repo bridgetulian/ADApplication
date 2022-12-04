@@ -39,9 +39,3 @@ struct DataEntry: View {
         }
     }
 
-
-struct DataEntry_Previews: PreviewProvider {
-    static var previews: some View {
-        DataEntry()
-    }
-}
