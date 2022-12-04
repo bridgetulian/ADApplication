@@ -36,10 +36,12 @@ struct AboutUsView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .scaledToFit()
+                                    .accessibilityLabel("Picture of Bridget Ulian")
                                 Image("abby_image")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .scaledToFit()
+                                    .accessibilityLabel("Picture of Abby Wright")
                             }
                             HStack {
                                 Text("Bridget Ulian")
