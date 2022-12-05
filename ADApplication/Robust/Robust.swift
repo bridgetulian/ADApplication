@@ -18,6 +18,9 @@ struct Robust: View {
                 NavigationLink(destination: DataEntry()){
                     Text("Provide Appropriate Data Entry Keyboard")
                 }
+                NavigationLink(destination: EasyData()) {
+                    Text("Provide Easy Methods for Data Entry")
+                }
             }
             Spacer()
         }
