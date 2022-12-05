@@ -26,6 +26,9 @@ struct Understandable: View {
                 NavigationLink(destination: ImportantElements()) {
                     Text("Positioning Important Elements Before Scroll")
                 }
+                NavigationLink(destination: GroupElements()) {
+                    Text("Group Operable Elements Together")
+                }
             }
             Spacer()
         }
