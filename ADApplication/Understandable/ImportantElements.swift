@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImportantElements: View {
     var body: some View {
-        ScrollView {
+//        ScrollView {
             
             VStack {
                 Text("Important Elements")
@@ -28,42 +28,46 @@ struct ImportantElements: View {
                       //  .foregroundColor(.white)
                       //  .background(Color(red: 88, green: 0, blue: 0))
                 }
-                HStack {
+                HStack { //maybe do VStack for this?
                     GroupBox {
-                        VStack {
-                            Text("Python for Beginners")
-                                .fontWeight(.bold)
-                                .padding([.bottom], 2)
-                            Text("This page will walk you through for and while loops in Python.")
-                                .font(.system(size: 12))
-                            Image("python_image")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .scaledToFit()
-                                .accessibilityLabel("Picture of Python Logo")
-                            
-                        }
+                        ScrollView{
+                            VStack {
+                                Text("Python for Beginners")
+                                    .fontWeight(.bold)
+                                    .padding([.bottom], 2)
+                                Text("This page will walk you through for and while loops in Python.")
+                                    .font(.system(size: 16))
+                                Image("python_image")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                    .accessibilityLabel("Picture of Python Logo")
+                                
+                            }
+                        }.frame(height: 180.0)
                     }
-                    .frame(maxHeight: .infinity)
-                    .padding()
+                    
+                    .padding(.horizontal, 10.0)
                     GroupBox {
-                        VStack {
-                            Text("Python for Beginners")
-                                .fontWeight(.bold)
-                            Image("python_image")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .scaledToFit()
-                                .accessibilityLabel("Picture of Python Logo")
-                            Text("This module will walk you through for and while loops in Python.")
-                                .font(.system(size: 12))
+                        ScrollView {
+                            VStack {
+                                Text("Python for Beginners")
+                                    .fontWeight(.bold)
+                                Image("python_image")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                    .accessibilityLabel("Picture of Python Logo")
+                                Text("This module will walk you through for and while loops in Python.")
+                                    .font(.system(size: 16))
+                            }
                         }
-                    }
-                    .frame(maxHeight: .infinity)
-                    .padding()
+                        .frame(height: 180.0)
+                    }.padding(.horizontal, 10.0)
                 }
-                
-            }
+                Text("Scroll to see differences")
+
+Spacer()
         }
     }
 }
