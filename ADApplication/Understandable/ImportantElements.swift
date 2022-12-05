@@ -28,7 +28,7 @@ struct ImportantElements: View {
                       //  .foregroundColor(.white)
                       //  .background(Color(red: 88, green: 0, blue: 0))
                 }
-                HStack {
+                HStack { //maybe do VStack for this?
                     GroupBox {
                         ScrollView{
                             VStack {
