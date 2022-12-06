@@ -25,6 +25,7 @@
 		02BE6FE828FEE2AB00559DE1 /* ADApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FE728FEE2AB00559DE1 /* ADApplicationTests.swift */; };
 		02BE6FF228FEE2AB00559DE1 /* ADApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */; };
 		02BE6FF428FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */; };
+		02CB9978293EC27700619078 /* ManipulationGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB9977293EC27700619078 /* ManipulationGestures.swift */; };
 		02CDBDCA291D7E8400024E54 /* Operable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDC9291D7E8400024E54 /* Operable.swift */; };
 		02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCB291D7E9400024E54 /* Understandable.swift */; };
 		02CDBDCE291D7E9D00024E54 /* Robust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCD291D7E9D00024E54 /* Robust.swift */; };
@@ -77,6 +78,7 @@
 		02BE6FED28FEE2AB00559DE1 /* ADApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITests.swift; sourceTree = "<group>"; };
 		02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02CB9977293EC27700619078 /* ManipulationGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulationGestures.swift; sourceTree = "<group>"; };
 		02CDBDC9291D7E8400024E54 /* Operable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operable.swift; sourceTree = "<group>"; };
 		02CDBDCB291D7E9400024E54 /* Understandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Understandable.swift; sourceTree = "<group>"; };
 		02CDBDCD291D7E9D00024E54 /* Robust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robust.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				02CDBDC9291D7E8400024E54 /* Operable.swift */,
+				02CB9977293EC27700619078 /* ManipulationGestures.swift */,
 				EABAC8DB293D83A90034645B /* ButtonPlacement.swift */,
 				02B1183029241F3800C6D102 /* TouchscreenGestures.swift */,
 				EAF3E4B42923189200AA0812 /* TargetSize.swift */,
@@ -375,6 +378,7 @@
 				02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */,
 				0211672F290AFD560051B2D7 /* GuidelinesView.swift in Sources */,
 				0211672B290AFD3E0051B2D7 /* AboutUsView.swift in Sources */,
+				02CB9978293EC27700619078 /* ManipulationGestures.swift in Sources */,
 				02BE6FD728FEE2A900559DE1 /* ADApplicationApp.swift in Sources */,
 				0244263A293E34CE0077E153 /* EasyData.swift in Sources */,
 				02CDBDCA291D7E8400024E54 /* Operable.swift in Sources */,

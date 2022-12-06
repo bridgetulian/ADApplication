@@ -24,6 +24,9 @@ struct Operable: View {
                 NavigationLink(destination: ButtonPlacement()){
                     Text("Button Placement")
                 }
+                NavigationLink(destination: ManipulationGestures()) {
+                    Text("Device Manipulation Gestures")
+                }
             }
             Spacer()
 
