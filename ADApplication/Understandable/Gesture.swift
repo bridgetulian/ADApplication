@@ -19,7 +19,7 @@ struct Gesture: View {
                 .multilineTextAlignment(.center)
                 .padding([.top, .leading, .trailing], 2.0)
                 .navigationBarBackButtonHidden(false)
-            Text("Most movile application users are accustomed to a specific set of touchscreen gestures, such as swiping or tapping. If you chose to use custom touchscreen gestures, such as tapping multiple times, provide clear instructions to users. These instructions should be visible and intuitive for the user.").padding(.all)
+            Text("Most mobile application users are accustomed to a specific set of touchscreen gestures, such as swiping or tapping. If you chose to use custom touchscreen gestures, such as tapping multiple times, provide clear instructions to users. These instructions should be visible and intuitive for the user.").padding(.all)
             GroupBox(label: Text("Custom Gesture Example")) {
                 Text("If users are expected to tap three times on the circle, provide instructions near the element.").padding(.top)
                 HStack{

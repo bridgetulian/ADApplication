@@ -21,13 +21,16 @@ struct Understandable: View {
 
                 NavigationLink(destination: Gesture(added: false)){
                     Text("Provide Instructions for Custom Gestures")
-                    }
+                }
 
                 NavigationLink(destination: ImportantElements()) {
                     Text("Positioning Important Elements Before Scroll")
                 }
                 NavigationLink(destination: GroupElements()) {
                     Text("Group Operable Elements Together")
+                }
+                NavigationLink(destination: ConsistentLayout()) {
+                    Text("Provide a Consistent Layout")
                 }
             }
             Spacer()
