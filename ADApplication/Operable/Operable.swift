@@ -27,6 +27,9 @@ struct Operable: View {
                 NavigationLink(destination: ManipulationGestures()) {
                     Text("Device Manipulation Gestures")
                 }
+                NavigationLink(destination: KeyboardControl()) {
+                    Text("Keyboard Control for Touchscreen Devices")
+                }
             }
             Spacer()
 

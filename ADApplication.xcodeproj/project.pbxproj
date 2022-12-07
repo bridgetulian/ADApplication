@@ -17,6 +17,7 @@
 		0255D72E29199FF300C41D59 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255D72D29199FF300C41D59 /* MenuView.swift */; };
 		0255D7302919A03900C41D59 /* Guideline1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255D72F2919A03900C41D59 /* Guideline1View.swift */; };
 		026F11212938FFB700A5887C /* SmallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F11202938FFB700A5887C /* SmallScreen.swift */; };
+		02AB0068293F8AB1003E4AF7 /* KeyboardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB0067293F8AB1003E4AF7 /* KeyboardControl.swift */; };
 		02B1183129241F3900C6D102 /* TouchscreenGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1183029241F3800C6D102 /* TouchscreenGestures.swift */; };
 		02BE6FD728FEE2A900559DE1 /* ADApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FD628FEE2A900559DE1 /* ADApplicationApp.swift */; };
 		02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FD828FEE2A900559DE1 /* ContentView.swift */; };
@@ -67,6 +68,7 @@
 		0255D72D29199FF300C41D59 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0255D72F2919A03900C41D59 /* Guideline1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guideline1View.swift; sourceTree = "<group>"; };
 		026F11202938FFB700A5887C /* SmallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallScreen.swift; sourceTree = "<group>"; };
+		02AB0067293F8AB1003E4AF7 /* KeyboardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardControl.swift; sourceTree = "<group>"; };
 		02B1183029241F3800C6D102 /* TouchscreenGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchscreenGestures.swift; sourceTree = "<group>"; };
 		02BE6FD328FEE2A900559DE1 /* ADApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE6FD628FEE2A900559DE1 /* ADApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationApp.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				02CDBDC9291D7E8400024E54 /* Operable.swift */,
+				02AB0067293F8AB1003E4AF7 /* KeyboardControl.swift */,
 				02CB9977293EC27700619078 /* ManipulationGestures.swift */,
 				EABAC8DB293D83A90034645B /* ButtonPlacement.swift */,
 				02B1183029241F3800C6D102 /* TouchscreenGestures.swift */,
@@ -368,6 +371,7 @@
 				EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */,
 				EA24E465293A848900FE81A0 /* Gesture.swift in Sources */,
 				0211672D290AFD4E0051B2D7 /* FeedbackView.swift in Sources */,
+				02AB0068293F8AB1003E4AF7 /* KeyboardControl.swift in Sources */,
 				EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */,
 				02283233293D8620008EC472 /* GroupElements.swift in Sources */,
 				023177A6293D3F420033AE8D /* ImportantElements.swift in Sources */,
