@@ -29,6 +29,9 @@ struct Understandable: View {
                 NavigationLink(destination: GroupElements()) {
                     Text("Group Operable Elements Together")
                 }
+                NavigationLink(destination: ChangingScreen()) {
+                    Text("Changing Screen Orientation")
+                 }
                 NavigationLink(destination: ConsistentLayout()) {
                     Text("Provide a Consistent Layout")
                 }
