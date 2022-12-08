@@ -27,7 +27,7 @@ struct SupportCharacteristics: View {
                     Stepper(value: $fontSize1, in: 15...50) {
                         Text("Font size: \(Int(fontSize1))")
                     }
-                    Text("This text supports magnification by wrapping.").font(.system(size: fontSize1)).lineLimit(2)
+                    Text("This text supports magnification by wrapping.").font(.system(size: fontSize1))
                 }.padding(.all)
                 GroupBox(label: Text("Does not support text wrapping with magnification")) {
                     Stepper(value: $fontSize2, in: 15...50) {
