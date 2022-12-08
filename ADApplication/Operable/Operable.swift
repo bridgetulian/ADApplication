@@ -13,7 +13,9 @@ struct Operable: View {
         VStack {
             Text("Operable")
                 .font(.title)
-            Text("all features are fully employable by everyone")
+            Text("All features are fully employable by everyone.")
+                .multilineTextAlignment(.center)
+                .padding()
             List {
                 NavigationLink(destination: TargetSize()){
                     Text("Touch Target Size")

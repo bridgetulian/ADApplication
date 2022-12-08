@@ -29,7 +29,6 @@ struct SmallScreen: View {
                         .frame(height: 40)
                         .background(Color(red: 0.8666666666666667, green: 0.9764705882352941, blue: 0.9921568627450981))
                         .foregroundColor(Color(red: 0.054901960784313725, green: 0.19215686274509805, blue: 0.5450980392156862))
-                        .border(Color(red: 0.054901960784313725, green: 0.19215686274509805, blue: 0.5450980392156862), width: 2)
                 }
                 .padding(.horizontal)
                 GroupBox() {
@@ -59,7 +58,8 @@ struct SmallScreen: View {
 }
 
 
-//minimize amount of information:
-//reasonable default size for content and touch controls
-//adapt length of link text to viewport width
-//position form fields below, not besides, their labels
+struct SmallScreenPreview: PreviewProvider {
+    static var previews: some View {
+        SmallScreen()
+    }
+}
