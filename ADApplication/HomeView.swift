@@ -43,25 +43,16 @@ struct HomeView: View {
                                      Spacer()
                                      GroupBox(label: Text("Useful Links")) {
                                          Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
+                                             .frame(alignment: .leading)
                                          Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
                                              .padding(.horizontal)
+                                             .frame(alignment: .leading)
                                              .foregroundColor(.blue)
                                          Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
                                              .foregroundColor(.blue)
+                                             .frame(alignment: .leading)
                                              .padding(.bottom)
                                      }.padding(.all)
-//                                         Text("Useful Links")
-//                                             .font(.headline)
-//                                             .frame(alignment: .center)
-//                                             .padding(.top)
-//                                         Link("Source Code", destination: (URL(string: "https://github.com/bridgetulian/ADApplication.git")!))
-//                                         Link("ADA Website", destination: (URL(string: "https://www.ada.gov")!))
-//                                             .padding(.horizontal)
-//                                             .foregroundColor(.blue)
-//                                         Link("WCAG Website", destination: (URL(string: "https://www.w3.org/WAI/standards-guidelines/wcag/")!))
-//                                             .foregroundColor(.blue)
-//                                             .padding(.bottom)
-//                                     Spacer()
 
                                  }
                              }

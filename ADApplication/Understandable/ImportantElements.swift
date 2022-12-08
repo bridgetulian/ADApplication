@@ -16,19 +16,20 @@ struct ImportantElements: View {
                         .font(.title)
                         .padding()
                         .multilineTextAlignment(.center)
+                HStack{
+                    Image(systemName: "pencil.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .foregroundColor(Color("Menu Color"))
+                        .padding([.leading],35)
+                        .frame(width: 35.0, height: 35.0)
                     Text("Always place important information before the page scroll. This way users can locate content without performaning an interaction.")
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    HStack {
-                        Text("Good Example (left)")
-                         //   .foregroundColor(.white)
-                         //   .background(Color(red: 0, green: 300, blue: 0))
-                        Text(" vs. ")
-                        Text("Bad Example (right)")
-                          //  .foregroundColor(.white)
-                          //  .background(Color(red: 88, green: 0, blue: 0))
-                    }
-                    HStack { //maybe do VStack for this?
+                        .padding([.top,.bottom,.trailing,.leading],20)
+                }
+                    Text("**Good Example**")
+                    
+                    .padding([.top],5)
+                    VStack { //maybe do VStack for this?
                         GroupBox {
                             ScrollView{
                                 VStack {
@@ -47,7 +48,9 @@ struct ImportantElements: View {
                             }.frame(height: 180.0)
                         }
                         
-                        .padding(.horizontal, 10.0)
+                        .padding([.horizontal,.bottom], 10.0)
+                        
+                        Text("**Bad Example**")
                         GroupBox {
                             ScrollView {
                                 VStack {
@@ -65,7 +68,6 @@ struct ImportantElements: View {
                             .frame(height: 180.0)
                         }.padding(.horizontal, 10.0)
                     }
-                    Text("Scroll to see differences")
 
     Spacer()
             }

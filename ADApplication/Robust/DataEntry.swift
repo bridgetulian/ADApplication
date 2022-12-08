@@ -41,3 +41,8 @@ struct DataEntry: View {
         }
     }
 
+struct DataEntryPreview: PreviewProvider {
+    static var previews: some View {
+        DataEntry()
+    }
+}

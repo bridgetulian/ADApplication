@@ -13,7 +13,9 @@ struct Understandable: View {
         VStack {
             Text("Understandable")
                 .font(.title)
-            Text("User can comprehend meaning of presented information")
+            Text("User can comprehend meaning of presented information.")
+                .multilineTextAlignment(.center)
+                .padding()
             List {
                 NavigationLink(destination: ClearElements()){
                     Text("Provide Distinguishing Features for Actionable Elements")
@@ -29,6 +31,9 @@ struct Understandable: View {
                 NavigationLink(destination: GroupElements()) {
                     Text("Group Operable Elements Together")
                 }
+                NavigationLink(destination: ChangingScreen()) {
+                    Text("Changing Screen Orientation")
+                 }
                 NavigationLink(destination: ConsistentLayout()) {
                     Text("Provide a Consistent Layout")
                 }
