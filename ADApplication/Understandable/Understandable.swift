@@ -21,7 +21,7 @@ struct Understandable: View {
 
                 NavigationLink(destination: Gesture(added: false)){
                     Text("Provide Instructions for Custom Gestures")
-                    }
+                }
 
                 NavigationLink(destination: ImportantElements()) {
                     Text("Positioning Important Elements Before Scroll")
@@ -31,6 +31,9 @@ struct Understandable: View {
                 }
                 NavigationLink(destination: ChangingScreen()) {
                     Text("Changing Screen Orientation")
+                 }
+                NavigationLink(destination: ConsistentLayout()) {
+                    Text("Provide a Consistent Layout")
                 }
             }
             Spacer()
