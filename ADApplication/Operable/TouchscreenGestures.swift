@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TouchscreenGestures: View {
     
-    @State var showInfo: Bool
+    @State var showInfo: Bool = false
     @State var sliderVal = 0.0
 
 
@@ -68,5 +68,12 @@ struct TouchscreenGestures: View {
                 
             }
         }
+    }
+}
+
+
+struct TouchScreenGesturePreviews: PreviewProvider {
+    static var previews: some View {
+        TouchscreenGestures()
     }
 }

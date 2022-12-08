@@ -19,7 +19,6 @@ struct ButtonPlacement: View {
             Image("Thumbzone")
                 .resizable(capInsets: EdgeInsets())
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 200.0)
                 .accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
             HStack{
                 Image(systemName: "pencil.circle")

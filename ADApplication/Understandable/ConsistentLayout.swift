@@ -19,9 +19,18 @@ struct ConsistentLayout: View {
                 Text("Provide a Consistent Layout")
                     .font(.title)
                     .padding()
-                Text("By ensuring that compontents appear in a consistent order for each page helps users navigate the application better. In particular, users quickly know where to look for navigation elements and important information.")
-                    .padding([.leading, .bottom, .trailing])
-                Text("Change these sample app headers through the menu button to see examples of consistent and inconsistent page layout.")
+                HStack{
+                    Image(systemName: "pencil.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .foregroundColor(Color("Menu Color"))
+                        .padding([.leading], 10)
+                        .frame(width: 35.0, height: 35.0)
+                    Text("By ensuring that compontents appear in a consistent order for each page, developers help users navigate the application better. Users  know where to look for navigation elements and important information.")
+                        .multilineTextAlignment(.center)
+                        .padding([ .bottom, .trailing])
+                }
+                Text("Change sample pages via the menu below to see examples of consistent and inconsistent page layout.")
                     .font(.subheadline)
                     .padding(.bottom)
                 GroupBox(label: Text("Consistent Layout of Header")) {

@@ -61,7 +61,7 @@ struct ChangingScreen: View {
     }
 }
 
-struct ConsistentLayout_Previews: PreviewProvider {
+struct ChangingScreenPreview: PreviewProvider {
     static var previews: some View {
         ChangingScreen()
     }
