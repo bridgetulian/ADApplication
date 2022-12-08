@@ -21,6 +21,9 @@ struct Robust: View {
                 NavigationLink(destination: EasyData()) {
                     Text("Provide Easy Methods for Data Entry")
                 }
+                NavigationLink(destination: SupportCharacteristics()) {
+                    Text("Support Platform Characteristics")
+                }
             }
             Spacer()
         }

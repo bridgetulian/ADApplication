@@ -2,7 +2,7 @@
 //  ClearElements.swift
 //  ADApplication
 //
-//  Created by Natalie Wright on 11/28/22.
+//  Created by Abigail Wright on 11/28/22.
 //
 
 import SwiftUI
