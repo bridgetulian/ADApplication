@@ -12,7 +12,7 @@ struct ImportantElements: View {
             
         ScrollView {
             VStack {
-                    Text("Important Elements")
+                    Text("Positioning Important Elements")
                         .font(.title)
                         .padding()
                         .multilineTextAlignment(.center)
