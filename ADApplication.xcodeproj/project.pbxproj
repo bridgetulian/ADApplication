@@ -37,6 +37,7 @@
 		EA6B4A4829356DE700FAEF61 /* ClearElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B4A4729356DE700FAEF61 /* ClearElements.swift */; };
 		EA875A3F291C7229001FBD3B /* Perceivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875A3E291C7229001FBD3B /* Perceivable.swift */; };
 		EABAC8DC293D83A90034645B /* ButtonPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAC8DB293D83A90034645B /* ButtonPlacement.swift */; };
+		EABBEECB29423834000B0D38 /* SupportCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABBEECA29423834000B0D38 /* SupportCharacteristics.swift */; };
 		EAD976AD2921D2EC00F590C2 /* ColorContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */; };
 		EAF3923229229822005372C6 /* TextMagnification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3923129229822005372C6 /* TextMagnification.swift */; };
 		EAF3E4B52923189200AA0812 /* TargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3E4B42923189200AA0812 /* TargetSize.swift */; };
@@ -93,6 +94,7 @@
 		EA6B4A4729356DE700FAEF61 /* ClearElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearElements.swift; sourceTree = "<group>"; };
 		EA875A3E291C7229001FBD3B /* Perceivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceivable.swift; sourceTree = "<group>"; };
 		EABAC8DB293D83A90034645B /* ButtonPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPlacement.swift; sourceTree = "<group>"; };
+		EABBEECA29423834000B0D38 /* SupportCharacteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCharacteristics.swift; sourceTree = "<group>"; };
 		EAD976AC2921D2EC00F590C2 /* ColorContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorContrast.swift; sourceTree = "<group>"; };
 		EAF3923129229822005372C6 /* TextMagnification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMagnification.swift; sourceTree = "<group>"; };
 		EAF3E4B42923189200AA0812 /* TargetSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSize.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			children = (
 				02CDBDCD291D7E9D00024E54 /* Robust.swift */,
 				02442639293E34CE0077E153 /* EasyData.swift */,
+				EABBEECA29423834000B0D38 /* SupportCharacteristics.swift */,
 				EA19399C2936E8D30048AA25 /* DataEntry.swift */,
 			);
 			path = Robust;
@@ -383,6 +386,9 @@
 				023177A6293D3F420033AE8D /* ImportantElements.swift in Sources */,
 				EA19BE322940267A008AF6E1 /* ConsistentLayout.swift in Sources */,
 				EAF3923229229822005372C6 /* TextMagnification.swift in Sources */,
+
+				EABBEECB29423834000B0D38 /* SupportCharacteristics.swift in Sources */,
+
 				02CE9AD12940EAF100994E3D /* ChangingScreen.swift in Sources */,
 				02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */,
 				EA6B4A4829356DE700FAEF61 /* ClearElements.swift in Sources */,

@@ -2,7 +2,7 @@
 //  ColorContrast.swift
 //  ADApplication
 //
-//  Created by Natalie Wright on 11/13/22.
+//  Created by Abigail Wright on 11/13/22.
 //
 
 import SwiftUI
