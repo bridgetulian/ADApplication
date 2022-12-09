@@ -28,7 +28,7 @@ struct MenuView: View {
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .imageScale(.large)
                 NavigationLink(destination: GuidelinesView()) {
-                    Text("Visual Guidelines")
+                    Text("Guidelines")
                 }
                     .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
                     .font(.headline)

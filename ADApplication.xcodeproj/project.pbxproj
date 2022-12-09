@@ -26,6 +26,7 @@
 		02BE6FE828FEE2AB00559DE1 /* ADApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FE728FEE2AB00559DE1 /* ADApplicationTests.swift */; };
 		02BE6FF228FEE2AB00559DE1 /* ADApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */; };
 		02BE6FF428FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */; };
+		02C3636629437B4D005FBBBD /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C3636529437B4D005FBBBD /* MailView.swift */; };
 		02CB9978293EC27700619078 /* ManipulationGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CB9977293EC27700619078 /* ManipulationGestures.swift */; };
 		02CDBDCA291D7E8400024E54 /* Operable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDC9291D7E8400024E54 /* Operable.swift */; };
 		02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDBDCB291D7E9400024E54 /* Understandable.swift */; };
@@ -83,6 +84,7 @@
 		02BE6FED28FEE2AB00559DE1 /* ADApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE6FF128FEE2AB00559DE1 /* ADApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITests.swift; sourceTree = "<group>"; };
 		02BE6FF328FEE2AB00559DE1 /* ADApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02C3636529437B4D005FBBBD /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		02CB9977293EC27700619078 /* ManipulationGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulationGestures.swift; sourceTree = "<group>"; };
 		02CDBDC9291D7E8400024E54 /* Operable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operable.swift; sourceTree = "<group>"; };
 		02CDBDCB291D7E9400024E54 /* Understandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Understandable.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				02116728290AFD0F0051B2D7 /* HomeView.swift */,
 				0211672A290AFD3E0051B2D7 /* AboutUsView.swift */,
 				0211672C290AFD4E0051B2D7 /* FeedbackView.swift */,
+				02C3636529437B4D005FBBBD /* MailView.swift */,
 				0211672E290AFD560051B2D7 /* GuidelinesView.swift */,
 				02CDBDC6291D7E4400024E54 /* Operable */,
 				02CDBDC4291D7E3500024E54 /* Robust */,
@@ -386,11 +389,10 @@
 				023177A6293D3F420033AE8D /* ImportantElements.swift in Sources */,
 				EA19BE322940267A008AF6E1 /* ConsistentLayout.swift in Sources */,
 				EAF3923229229822005372C6 /* TextMagnification.swift in Sources */,
-
 				EABBEECB29423834000B0D38 /* SupportCharacteristics.swift in Sources */,
-
 				02CE9AD12940EAF100994E3D /* ChangingScreen.swift in Sources */,
 				02BE6FD928FEE2A900559DE1 /* ContentView.swift in Sources */,
+				02C3636629437B4D005FBBBD /* MailView.swift in Sources */,
 				EA6B4A4829356DE700FAEF61 /* ClearElements.swift in Sources */,
 				02CDBDCE291D7E9D00024E54 /* Robust.swift in Sources */,
 				02CDBDCC291D7E9400024E54 /* Understandable.swift in Sources */,

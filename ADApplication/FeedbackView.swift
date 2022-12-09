@@ -12,6 +12,11 @@ import MessageUI
 struct FeedbackView: View {
         
     @State var showMenu = false
+    @State private var showEmailComposer = false
+    @State private var showAlert = false
+    @State private var alertMessage: String = ""
+    @State var body2: String = ""
+    @State var name: String = ""
 
     var body: some View{
         
@@ -35,17 +40,29 @@ struct FeedbackView: View {
                         Text("Part of maintaining universal usability is asking for an implementing feedback. Please let us know if there is anything that could make our application more usable!")
                             .padding([.leading, .bottom, .trailing])
                         Form {
-                            TextField("Name & Contact (optional):", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            TextEditor(text: .constant("Placeholder"))
+                            TextField("Name & Contact (optional):", text: $name)
+                            TextEditor(text: $body2)
                                 .frame(height: 400.0)
                     
                             Button("Submit") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                            }
+                                let emailData = EmailData(subject: "Feedback", recipients: ["afwright@middlebury.edu", "bulian@middlebury.edu"], body: body2)
+                                if MailView.canSendEmail() {
+                                    showEmailComposer = true
+                                } else {
+                                    alertMessage = "Unable to send an email from this device."
+                                    showAlert = true
+                                }
+                                
+                            }.sheet(isPresented: $showEmailComposer, content: {
+                                
+                            }).alert(isPresented: $showAlert, content : {
+                                Alert(title: Text("Send Email"),
+                                      message: Text(alertMessage),
+                                      dismissButton: .default(Text("Dismiss")))
+                            })
                         }
                     }
                 }
-                
                 ZStack(alignment: .leading) {
                     if self.showMenu {
                         MenuView()
